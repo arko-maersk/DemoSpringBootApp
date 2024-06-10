@@ -1,11 +1,18 @@
 package org.example.starter;
 
 public class Employee {
-    public Employee() {
-        this.name = "Arko";
-        this.age = 22;
-        this.id = 1;
+    public Employee(int i, String johnDoe, int i1) {
+        this.name = johnDoe;
+        this.age = i1;
+        this.id = i;
     }
+
+    public Employee() {
+        this.name="Arko";
+        this.age=10;
+        this.id=100;
+    }
+
 
     public String getName() {
         return name;
@@ -32,6 +39,6 @@ public class Employee {
     }
 
     private String name;
-    private Integer age;
-    private Integer id;
+    private int age;
+    private int id;
 }
